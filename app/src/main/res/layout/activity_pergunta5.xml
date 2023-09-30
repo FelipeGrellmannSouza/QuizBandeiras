@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sigmar_one"
+                android:text="@string/Pergunta"
+                android:textColor="@color/Orange"
+                android:textSize="34sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/bandeiraargentina"
+            tools:srcCompat="@drawable/bandeiraargentina" />
+
+        <RadioGroup
+            android:id="@+id/rdgPergunta5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbErrado13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grécia"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbErrado14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Honduras"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbErrado15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uruguai"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbCorreto5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Argentina"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnResponder5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Responder"
+                android:text="RESPONDER"
+                android:backgroundTint="@color/Green"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

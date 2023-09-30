@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pergunta2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sigmar_one"
+                android:text="@string/Pergunta"
+                android:textColor="@color/Orange"
+                android:textSize="34sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:src="@drawable/sui_a_png" />
+
+        <RadioGroup
+            android:id="@+id/rdgPerguntas2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdbErrado4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinamarca"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbCorreto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suiça"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbErrado5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groelândia"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rdbErrado6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suécia"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnResponder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Responder2"
+                android:text="RESPONDER"
+                android:textSize="24sp"
+                android:backgroundTint="@color/Green"/>
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
