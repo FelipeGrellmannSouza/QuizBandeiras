@@ -43,7 +43,7 @@ public class Pergunta10 extends AppCompatActivity {
         if (rdbCorreto.isChecked()){
             GerenciadorPontos.addPontos();
         }
-        Intent intent = new Intent(Pergunta10.this, Ranking.class);
+        Intent intent = new Intent(Pergunta10.this, TelaFinal.class);
         startActivity(intent);
         finish();
     }

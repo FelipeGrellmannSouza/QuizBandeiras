@@ -13,7 +13,7 @@
         android:theme="@style/Theme.QuizBandeiras"
         tools:targetApi="31">
         <activity
-            android:name=".Ranking"
+            android:name=".TelaFinal"
             android:exported="false" />
         <activity
             android:name=".Pergunta10"

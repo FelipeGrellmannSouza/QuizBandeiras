@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //BancoDados.criarBancoDados()
+
         edtNomeUsuario = findViewById(R.id.edtNomeUsuario);
         btnInciar = findViewById(R.id.btnIniciar);
         btnSair = findViewById(R.id.btnSair);
