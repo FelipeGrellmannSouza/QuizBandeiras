@@ -27,9 +27,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.my_row, parent, false);
-
-        //LayoutInflater inflater = LayoutInflater.from(context);
-        //View view = inflater.inflate(R.layout.my_row, parent, false);
         return new MyViewHolder(view);
     }
 
@@ -37,6 +34,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.nomeTextView.setText(String.valueOf(nome_usuario.get(position)));
         holder.pontosTextView.setText(String.valueOf(pontos_usuario.get(position)));
+        holder.posicaoTextView.setText(String.valueOf(position + 1));
     }
 
     @Override
@@ -45,11 +43,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView nomeTextView, pontosTextView;
+        TextView nomeTextView, pontosTextView, posicaoTextView;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             nomeTextView = itemView.findViewById(R.id.nomeTextView);
             pontosTextView = itemView.findViewById(R.id.pontosTextView);
+            posicaoTextView = itemView.findViewById(R.id.posicaoTextView);
         }
     }
 }

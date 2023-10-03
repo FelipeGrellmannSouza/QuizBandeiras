@@ -83,6 +83,8 @@ public class TelaFinal extends AppCompatActivity {
                 // Adicionar dados às listas
                 nome_usuario.add(nome);
                 pontos_usuario.add(String.valueOf(pontos));
+
+
             }
         }
         cursor.close();

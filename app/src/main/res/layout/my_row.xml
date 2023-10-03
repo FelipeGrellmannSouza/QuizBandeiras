@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:padding="12dp">
 
-           <!-- <TextView
+           <TextView
                 android:id="@+id/posicaoTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,32 +27,30 @@
                 android:textColor="#000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />-->
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/nomeTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="52dp"
                 android:text="Nome 1"
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/posicaoTextView"
                 app:layout_constraintTop_toTopOf="parent" />
-               <!-- app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/posicaoTextView"
-                app:layout_constraintTop_toTopOf="parent" -->
 
             <TextView
                 android:id="@+id/pontosTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="36dp"
+                android:layout_marginEnd="24dp"
                 android:text="10"
-                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>

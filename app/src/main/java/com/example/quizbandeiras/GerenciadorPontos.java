@@ -1,12 +1,9 @@
 package com.example.quizbandeiras;
 
-import android.database.sqlite.SQLiteOpenHelper;
-
 //classe que serivirá para gerenciar os pontos e o nome do usuario
 public class GerenciadorPontos {
-    //Cria variavel pontos
+    //Criando a Variavel nome e pontos
     private static int pontos = 0;
-    //cria variavavel nome
     private static String nome;
 
     //Retorna pontos
