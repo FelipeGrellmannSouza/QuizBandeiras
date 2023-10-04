@@ -43,7 +43,8 @@ public class TelaFinal extends AppCompatActivity {
 
 
         //Pega os pontos feitos e mostra na tela
-        int pontos = GerenciadorPontos.getPontos();
+        int acertos = GerenciadorPontos.getPontos();
+        int pontos = GerenciadorPontos.calcularPontos();
         String nome = GerenciadorPontos.getNome();
 
         //Definindo nome e o ponto do usuario no banco de dados
@@ -62,7 +63,7 @@ public class TelaFinal extends AppCompatActivity {
 
 
         //mostra os pontos marcados
-        txtPontos.setText(String.valueOf(pontos));
+        txtPontos.setText(String.valueOf(acertos));
         //Pega o nome digitado e mostra na tela
         txtNome.setText(""+nome);
     }

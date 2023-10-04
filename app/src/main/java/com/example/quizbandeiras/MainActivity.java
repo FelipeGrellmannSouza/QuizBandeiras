@@ -59,8 +59,9 @@ public class MainActivity extends AppCompatActivity {
     public void Iniciar(View view){    //método para o botão iniciar
         String nome = edtNomeUsuario.getText().toString();//Pega o nome do usuario
         GerenciadorPontos.setNome(nome);
-        Intent intent = new Intent(MainActivity.this, Pergunta1.class); //Chama activity_pergunta1
-        GerenciadorPontos.resetPontos(); //Zera os pontos
+        Intent intent = new Intent(MainActivity.this, Pergunta1.class);//Chama activity_pergunta1
+        GerenciadorPontos.resetPontos(); //Zera os pontos e o tempo
+        GerenciadorPontos.iniciarTempo();//Inicia o tempo
         startActivity(intent);
     }
 }
